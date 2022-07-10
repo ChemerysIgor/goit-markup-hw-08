@@ -3,12 +3,16 @@
 }
 
 .team__title {
+    font-size: 28px;
+    line-height: 33px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
     text-align: center;
     color: var(--main-text-color);
     margin-bottom: 50px;
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 .team__list {

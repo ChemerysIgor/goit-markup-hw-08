@@ -2,11 +2,13 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
-    // font-size: 36px;
-    // line-height: 1.16;
     text-align: center;
     color: var(--main-text-color);
     margin-bottom: 50px;
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 .clients__list {
@@ -36,7 +38,7 @@
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    @include transition($tp: border);
+    @include transition(border);
     &:hover,
     &:focus {
         border: 1px solid var(--link-color);

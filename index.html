@@ -48,7 +48,7 @@
           </li>
         </ul>
         <button type="button" class="burger-btn">
-          <svg width="24" height="16">
+          <svg class="burger-icon" width="24" height="16" >
             <use href="./image/icons.svg#icon-burger_btn" ></use>
           </svg>
                         </button>
@@ -74,13 +74,13 @@
                             <div class="mob__bottom">
                                 <ul class="contact__mob">
                                     <li class="contact__connect">
-                                        <a href="mailto:info@devstudio.com" class="contact__link">
-                                            <span class="contact__number">info@devstudio.com</span>
-                                        </a>
-                                    </li>
-                                    <li class="contact__connect">
                                         <a href="tel:+380961111111" class="contact__link">
                                             <span class="contact__number">+38 096 111 11 11</span></a>
+                                    </li>
+                                    <li class="contact__connect">
+                                        <a href="mailto:info@devstudio.com" class="contact__link">
+                                            <span class="contact__number mail">info@devstudio.com</span>
+                                        </a>
                                     </li>
                                 </ul>
 
@@ -192,7 +192,21 @@
                 <h2 class="team__title ">Наша команда</h2>
                 <ul class="team__list ">
                     <li class="team__card ">
-                        <img src="./image/dem.jpg " alt="Demianenko " width="270 " />
+                        <picture>
+                            <source srcset="
+                            ./image/Dem-img-desktop-1x.jpg 1x, 
+                            ./image/Dem-img-desktop-2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                      ./image/Dem-img-tab-1x.jpg 1x,
+                      ./image/Dem-img-tab-2x.jpg 2x
+                    " media="(min-width:768px)" />
+                            <source srcset="
+                      ./image/Dem-img-mob-1x.jpg 1x,
+                      ./image/Dem-img-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                            <img src="./image/Dem-img-desktop-1x.jpg " alt="Demianenko " width="270 " />
+                        </picture>
+
                         <div class="team__content ">
                             <h3 class="team__members ">Игорь Демьяненко</h3>
                             <p class="team__text ">Product Designer</p>
@@ -229,7 +243,20 @@
                         </div>
                     </li>
                     <li class="team__card ">
-                        <img src="./image/repi.jpg " alt="Repina " width="270 " />
+                        <picture>
+                            <source srcset="
+                            ./image/Rep-img-desktop-1x.jpg 1x, 
+                            ./image/Rep-img-desktop-2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                      ./image/Rep-img-tab-1x.jpg 1x,
+                      ./image/Rep-img-tab-2x.jpg 2x
+                    " media="(min-width:768px)" />
+                            <source srcset="
+                      ./image/Rep-img-mob-1x.jpg 1x,
+                      ./image/Rep-img-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                            <img src="./image/Rep-img-desktop-1x.jpg " alt="Repina" width="270 " />
+                        </picture>
                         <div class="team__content ">
                             <h3 class="team__members ">Ольга Репина</h3>
                             <p class="team__text ">Frontend Developer</p>
@@ -266,7 +293,20 @@
                         </div>
                     </li>
                     <li class="team__card ">
-                        <img src="./image/tar.jpg " alt="Tarasov " width="270 " />
+                        <picture>
+                            <source srcset="
+                            ./image/Tar-img-desktop-1x.jpg 1x, 
+                            ./image/Tar-img-desktop-2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                      ./image/Tar-img-tab-1x.jpg 1x,
+                      ./image/Tar-img-tab-2x.jpg 2x
+                    " media="(min-width:768px)" />
+                            <source srcset="
+                      ./image/Tar-img-mob-1x.jpg 1x,
+                      ./image/Tar-img-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                            <img src="./image/Tar-img-desktop-1x.jpg " alt="Tarasov" width="270 " />
+                        </picture>
                         <div class="team__content ">
                             <h3 class="team__members ">Николай Тарасов</h3>
                             <p class="team__text ">Marketing</p>
@@ -303,7 +343,20 @@
                         </div>
                     </li>
                     <li class="team__card ">
-                        <img src="./image/jer.jpg " alt="Jermakov " width="270 " />
+                        <picture>
+                            <source srcset="
+                            ./image/Erm-img-desktop-1x.jpg 1x, 
+                            ./image/Erm-img-desktop-2x.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="
+                      ./image/Erm-img-tab-1x.jpg 1x,
+                      ./image/Erm-img-tab-2x.jpg 2x
+                    " media="(min-width:768px)" />
+                            <source srcset="
+                      ./image/Erm-img-mob-1x.jpg 1x,
+                      ./image/Erm-img-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                            <img src="./image/Erm-img-desktop-1x.jpg " alt="Jermakov" width="270 " />
+                        </picture>
                         <div class="team__content ">
                             <h3 class="team__members ">Михаил Ермаков</h3>
                             <p class="team__text ">UI Designer</p>
@@ -503,7 +556,7 @@
                         <textarea name="comments " class="modal__comments " id="modal-text " placeholder="Введите текст "></textarea>
 
                         <div class="modal__line ">
-                            <input type="checkbox " name="user-agreement " id="user-agreement " class="modal__checkbox is-hidden ">
+                            <input type="checkbox" name="user-agreement " id="user-agreement " class="modal__checkbox is-hidden ">
                             <label for="user-agreement " class="modal__agreement ">
                               <span>
                           <svg class="modal__tick " width="11 " height="8 ">

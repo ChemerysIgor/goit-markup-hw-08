@@ -27,11 +27,13 @@
 }
 
 .logo--header {
-    // margin-right: 93px;
     color: #000000;
     margin-right: auto;
     @include tablet {
         margin-right: 88px;
+    }
+    @include desktop {
+        margin-right: 93px;
     }
 }
 
@@ -91,7 +93,6 @@
 .header__list {
     list-style: none;
     padding: 0;
-    // display: flex;
     align-items: center;
     margin-left: auto;
     display: none;
@@ -148,29 +149,29 @@
     }
 }
 
-.contact__link {
-    text-decoration: none;
-}
-
-.contact__number {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: calc(28px / 24px);
-    letter-spacing: 0.02em;
-    color: #757575;
-}
-
 // -------------MOB-MENU------------------
 .burger-btn {
     display: block;
     margin-left: auto;
     width: 40px;
     height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     @include tablet {
         display: none;
     }
+}
+
+.burger-icon {
+    .burger-btn:hover>&,
+    .burger-btn:focus>&,
+    .burger-btn:active>& {
+        fill: var(--link-color);
+    }
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob__menu {
@@ -204,8 +205,6 @@
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     text-decoration: none;
-    // padding-top: 25px;
-    // padding-bottom: 25px;
     padding: 0;
     transition-property: color;
     transition-duration: 250ms;
@@ -220,6 +219,39 @@
     position: absolute;
     right: 15px;
     top: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mob__btn:active>.mob__close,
+.mob__btn:hover>.mob__close,
+.mob__btn:focus>.mob__close {
+    fill: var(--link-color);
+}
+
+.contact__link {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: #757575;
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--link-color);
+    }
+    @include mobile {
+        font-size: 34px;
+        line-height: calc(40 / 34);
+    }
+}
+
+.contact__number.mail {
+    font-size: 24px;
+    line-height: calc(28 / 24);
 }
 
 .mob__top {
@@ -234,6 +266,7 @@
     margin-top: 64px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .mob__soc-items {
@@ -250,6 +283,12 @@
 
 .mob__soc-link {
     text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
 }
 
 .contact__connect:not(:last-child) {

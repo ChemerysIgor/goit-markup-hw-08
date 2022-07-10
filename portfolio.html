@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="conteiner">
+            <a href="./index.html" class="logo logo--header" lang="en">
+                <span class="logo__word">Web</span>Studio</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Студия</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./portfolio.html" class="nav__link current">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header__list">
+                <li class="header__connect">
+                    <a href="mailto:info@devstudio.com" class="header__link">
+                        <svg class="header__icon" width="16" height="12">
+                <use href="./image/icons.svg#icon-envelope-hover"></use>
+              </svg>
+                        <span class="header__number">info@devstudio.com</span>
+                    </a>
+                </li>
+                <li class="header__connect">
+                    <a href="tel:+380961111111" class="header__link">
+                        <svg class="header__icon" width="10" height="16">
+                <use href="./image/icons.svg#icon-smartphone"></use></svg
+              ><span class="header__number">+38 096 111 11 11</span></a
+            >
+          </li>
+        </ul>
+        <button type="button" class="burger-btn">
+          <svg width="24" height="16">
+            <use href="./image/icons.svg#icon-burger_btn"></use>
+          </svg>
+                        </button>
+                        <div class="mob__menu is-hidden">
+                            <button class="mob__btn">
+            <svg class="mob__close" width="19" height="19">
+              <use href="./image/icons.svg#icon-Close"></use>
+            </svg>
+          </button>
+                            <div class="mob__top">
+                                <ul class="mob__list">
+                                    <li class="mob__item">
+                                        <a href="./index.html" class="mob__link current">Студия</a>
+                                    </li>
+                                    <li class="mob__item">
+                                        <a href="./portfolio.html" class="mob__link">Портфолио</a>
+                                    </li>
+                                    <li class="mob__item">
+                                        <a href="" class="mob__link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mob__bottom">
+                                <ul class="contact__mob">
+                                    <li class="contact__connect">
+                                        <a href="mailto:info@devstudio.com" class="contact__link">
+                                            <span class="contact__number">info@devstudio.com</span>
+                                        </a>
+                                    </li>
+                                    <li class="contact__connect">
+                                        <a href="tel:+380961111111" class="contact__link">
+                                            <span class="contact__number">+38 096 111 11 11</span></a>
+                                    </li>
+                                </ul>
+
+                                <ul class="mob__soc-networks">
+                                    <li class="mob__soc-items">
+                                        <a href=" " class="mob__soc-link">Instagram </a>
+                                    </li>
+                                    <li class="mob__soc-items">
+                                        <a href=" " class="mob__soc-link before">Twitter </a>
+                                    </li>
+                                    <li class="mob__soc-items">
+                                        <a href=" " class="mob__soc-link before">Facebook </a>
+                                    </li>
+                                    <li class="mob__soc-items">
+                                        <a href=" " class="mob__soc-link before">LinkedIn </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="conteiner">
+                <h1 class="visually-hidden">work examples</h1>
+                <ul class="btn-list">
+                    <li class="list-item">
+                        <button type="button" class="btn-item">Все</button>
+                    </li>
+                    <li class="list-item">
+                        <button type="button" class="btn-item">Веб-сайты</button>
+                    </li>
+                    <li class="list-item">
+                        <button type="button" class="btn-item">Приложения</button>
+                    </li>
+                    <li class="list-item">
+                        <button type="button" class="btn-item">Дизайн</button>
+                    </li>
+                    <li class="list-item">
+                        <button type="button" class="btn-item">Маркетинг</button>
+                    </li>
+                </ul>
+
+                <ul class="examples">
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="
+                      ./image/img-techno.jpg   1x,
+                      ./image/img-tehno-2x.jpg 2x
+                    " media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-techno-tab-1x.jpg 1x,
+                      ./image/img-techno-tab-2x.jpg 2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-techno-mob-1x.jpg 1x,
+                      ./image/img-techno-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-techno.jpg" alt="tehno" width="450" class="examples-img" />
+                            </picture>
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Технокряк</h2>
+                            <p class="examples-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="
+                      ./image/img-bascketball.jpg    1x,
+                      ./image/img-bascketball-2x.jpg 2x
+                    " media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-bascketball-tab-1x.jpg 1x,
+                      ./image/img-bascketball-tab-2x.jpg 2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-bascketball-mob-1x.jpg 1x,
+                      ./image/img-bascketball-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-bascketball.jpg" alt="two man plaing bascketball" width="450" class="examples-img" />
+                            </picture>
+
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Постер New Orlean vs Golden Star</h2>
+                            <p class="examples-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="
+                      ./image/img-seafood.jpg    1x,
+                      ./image/img-seafood-2x.jpg 2x
+                    " media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-seafood-tab-1x.jpg 1x,
+                      ./image/img-seafood-2x.jpg     2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-seafood-mob-1x.jpg 1x,
+                      ./image/img-seafood-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-seafood.jpg" alt="logo of restraunt" width="450" class="examples-img" />
+                            </picture>
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Ресторан Seafood</h2>
+                            <p class="examples-text">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="
+                      ./image/img-headphone.jpg    1x,
+                      ./image/img-headphone-2х.jpg 2x
+                    " media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-headphone-tab-1x.jpg 1x,
+                      ./image/img-headphone-tab-2х.jpg 2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-headphone-mob-1x.jpg 1x,
+                      ./image/img-headphone-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-headphone.jpg" alt="headphone" width="450" class="examples-img" />
+                            </picture>
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Проект Prime</h2>
+                            <p class="examples-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="
+                      ./image/img-boxes.jpg    1x,
+                      ./image/img-boxes-2х.jpg 2x
+                    " media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-boxes-tab-1x.jpg 1x,
+                      ./image/img-boxes-2х.jpg     2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-boxes-mob-1x.jpg 1x,
+                      ./image/img-boxes-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-boxes.jpg" alt="two boxes" width="450" class="examples-img" />
+                            </picture>
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Проект Boxes</h2>
+                            <p class="examples-text">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="
+                      ./image/img-monitor.jpg    1x,
+                      ./image/img-monitor-2х.jpg 2x
+                    " media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-monitor-tab-1x.jpg 1x,
+                      ./image/img-monitor-2х.jpg     2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-monitor-mob-1x.jpg 1x,
+                      ./image/img-monitor-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-monitor.jpg" alt="monitor" width="450" class="examples-img" />
+                            </picture>
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Inspiration has no Borders</h2>
+                            <p class="examples-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="
+                      ./image/img-magazine.jpg   1x,
+                      ./image/img-magazin-2х.jpg 2x
+                    " media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-magazine-tab-1x.jpg 1x,
+                      ./image/img-magazin-2х.jpg      2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-magazine-mob-1x.jpg 1x,
+                      ./image/img-magazine-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-magazine.jpg" alt="magazine" width="450" class="examples-img" />
+                            </picture>
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Издание Limited Edition</h2>
+                            <p class="examples-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="./image/img-lab.jpg 1x, ./image/img-lab-2х.jpg 2x" media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-lab-tab-1x.jpg 1x,
+                      ./image/img-lab-tab-2x.jpg 2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-lab-mob-1x.jpg 1x,
+                      ./image/img-lab-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-lab.jpg" alt="label" width="450" class="examples-img" />
+                            </picture>
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Проект LAB</h2>
+                            <p class="examples-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="examples-item">
+                        <div class="example-top">
+                            <picture>
+                                <source srcset="
+                      ./image/img-laptop.jpg    1x,
+                      ./image/img-laptop-2х.jpg 2x
+                    " media="(min-width:1200px)" />
+                                <source srcset="
+                      ./image/img-laptop-tab-1x.jpg 1x,
+                      ./image/img-laptop-tab-2x.jpg 2x
+                    " media="(min-width:768px)" />
+                                <source srcset="
+                      ./image/img-laptop-mob-1x.jpg 1x,
+                      ./image/img-laptop-mob-2x.jpg 2x
+                    " media="(min-width:480px)" />
+                                <img src="./image/img-laptop.jpg" alt="laptop" width="450" class="examples-img" />
+                            </picture>
+                            <p class="overley-text">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="examples-title">Growing Business</h2>
+                            <p class="examples-text">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="conteiner block">
+            <div class="footer__contacts">
+                <a href="./index.html " class="logo logo--footer" lang="en ">
+                    <span class="logo__word">Web</span>Studio</a>
+                <address class="footer__post-address">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
+                <ul class="footer__virtual">
+                    <li class="footer__interactive">
+                        <a href="mailto:info@example.com " class="footer__connection">info@example.com</a
+              >
+            </li>
+            <li class="footer__interactive">
+              <a href="tel:+380991111111 " class="footer__connection"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__network-address">
+          <h3 class="footer__title">присоединяйтесь</h3>
+          <ul class="footer__list">
+            <li class="footer__soc-networks">
+              <a href=" " class="footer__link">
+                <svg class="footer__icon" width="20 " height="20 ">
+                  <use href="./image/icons.svg#icon-instagram "></use>
+                </svg>
+              </a>
+                    </li>
+                    <li class="footer__soc-networks">
+                        <a href=" " class="footer__link">
+                            <svg class="footer__icon" width="20 " height="20 ">
+                  <use href="./image/icons.svg#icon-twitter "></use>
+                </svg>
+                        </a>
+                    </li>
+                    <li class="footer__soc-networks">
+                        <a href=" " class="footer__link">
+                            <svg class="footer__icon" width="20 " height="20 ">
+                  <use href="./image/icons.svg#icon-facebook "></use>
+                </svg>
+                        </a>
+                    </li>
+                    <li class="footer__soc-networks">
+                        <a href=" " class="footer__link">
+                            <svg class="footer__icon" width="20 " height="20 ">
+                  <use href="./image/icons.svg#icon-linkedin "></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__subsccrible">
+          <h3 class="footer__caption">Подпишитесь на рассылку</h3>
+          <div class="footer__area">
+            <form class="footer__form">
+              <label>
+                <input
+                  type="email "
+                  name="subcrible-email "
+                  placeholder="E-mail "
+                  class="footer__input"
+                />
+              </label>
+              <button type="submit " class="footer__btn">
+                Подписаться
+                <svg class="footer__send">
+                  <use href="./image/icons.svg#icon-icon-send "></use>
+                </svg>
+                            </button>
+                            </form>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="./js/menu.js "></script>
+</body>
+
+</html>

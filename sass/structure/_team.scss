@@ -1,0 +1,96 @@
+.team {
+    background-color: #f5f4fa;
+}
+
+.team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--main-text-color);
+    margin-bottom: 50px;
+}
+
+.team__list {
+    list-style: none;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team__card {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    @media screen and (min-width: 720px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+}
+
+.team__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.team__members {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+}
+
+.team__text {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
+}
+
+.team__contacts {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.team__soc-networks {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.team__link {
+    @include center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    outline: transparent;
+    &:hover,
+    &:focus {
+        background-color: var(--link-color);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.team__icons {
+    fill: #afb1b8;
+    @include transition();
+    .team__link:hover>&,
+    .team__link:focus>& {
+        fill: var(--bacground-white);
+    }
+}

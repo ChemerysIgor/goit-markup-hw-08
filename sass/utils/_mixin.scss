@@ -1,0 +1,26 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition($tp: fill, $td: 250ms, $tt: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-property: $tp;
+    transition-duration: $td;
+    transition-timing-function: $tt;
+}
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

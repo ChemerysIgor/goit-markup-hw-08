@@ -1,5 +1,8 @@
 .principles.section {
-    padding-bottom: 0;
+    padding-bottom: 60px;
+    @include desktop {
+        padding-bottom: 0;
+    }
 }
 
 .principles__list {

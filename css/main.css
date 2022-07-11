@@ -98,12 +98,13 @@ ul {
   line-height: 33px;
   text-align: center;
   color: var(--main-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -221,7 +222,7 @@ ul {
 }
 
 .btn-list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 15px;
@@ -231,6 +232,12 @@ ul {
 @media screen and (min-width: 768px) {
   .btn-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-list {
+    margin-bottom: 50px;
   }
 }
 
@@ -1253,7 +1260,12 @@ ul {
 }
 
 .principles.section {
-  padding-bottom: 0;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .principles.section {
+    padding-bottom: 0;
+  }
 }
 
 .principles__list {
@@ -1335,12 +1347,13 @@ ul {
   font-weight: 700;
   text-align: center;
   color: var(--main-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 

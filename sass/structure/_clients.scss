@@ -4,10 +4,11 @@
     line-height: 33px;
     text-align: center;
     color: var(--main-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @include desktop {
         font-size: 36px;
         line-height: 1.16;
+        margin-bottom: 50px;
     }
 }
 
